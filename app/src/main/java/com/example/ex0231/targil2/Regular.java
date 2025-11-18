@@ -24,6 +24,10 @@ public class Regular extends Vehicles{
     {
         System.out.println("the noise is annoying");
     }
+    public void hitchhikers()
+    {
+        System.out.println("please take us");
+    }
     @Override
     public String toString() {
         return "Regular{" +

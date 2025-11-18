@@ -21,6 +21,10 @@ public class Cart extends Light{
     {
         return 0;
     }
+    public void hitchhikers()
+    {
+        System.out.println("get the way homeless");
+    }
     @Override
     public String toString() {
         return "Cart{" +

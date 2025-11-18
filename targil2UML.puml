@@ -1,0 +1,129 @@
+@startuml
+class com.example.ex0231.targil2.Bicycle {
+- boolean salsela
++ boolean isSalsela()
++ void setSalsela(boolean)
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Truck {
+- int maxKaved
++ int getMaxKaved()
++ void setMaxKaved(int)
++ double exhaust()
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Heavy {
+- int nigrarim
++ int getNigrarim()
++ void setNigrarim(int)
++ double exhaust()
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Light {
+- boolean manoa
++ boolean isManoa()
++ void setManoa(boolean)
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Tractor {
+- String typeNigrarim
++ String getTypeNigrarim()
++ void setTypeNigrarim(String)
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Cart {
+- int minCharging
++ int getMinCharging()
++ void setMinCharging(int)
++ double exhaust()
++ void hitchhikers()
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Main {
++ {static} double amountZihom(Vehicles[])
++ {static} void amountRash(Vehicles[])
++ {static} int sumUp(Vehicles[])
+- int aLotChargeCar(Vehicles[])
+}
+
+class com.example.ex0231.targil2.Vehicles {
+- int carNumber
+- int amountOfWheels
+- String steering
+- int age
+- int zihom
++ int getCarNumber()
++ void setCarNumber(int)
++ int getAmountOfWheels()
++ void setAmountOfWheels(int)
++ String getSteering()
++ void setSteering(String)
++ int getAge()
++ void setAge(int)
++ int getZihom()
++ void setZihom(int)
++ double exhaust()
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Chery {
+- boolean reverseCamera
++ boolean isReverseCamera()
++ void setReverseCamera(boolean)
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Kibbutz {
+- Vehicles[] cars
+- int camutCars
++ void hosafa(Vehicles)
+- Vehicles[] oldCar()
+- int kalCars()
+}
+
+
+class com.example.ex0231.targil2.Mercedes {
+- boolean repud
++ boolean isRepud()
++ void setRepud(boolean)
++ String toString()
+}
+
+
+class com.example.ex0231.targil2.Regular {
+- int passengers
++ int getPassengers()
++ void setPassengers(int)
++ double exhaust()
++ void noise()
++ void hitchhikers()
++ String toString()
+}
+
+
+
+
+com.example.ex0231.targil2.Light <|-- com.example.ex0231.targil2.Bicycle
+com.example.ex0231.targil2.Heavy <|-- com.example.ex0231.targil2.Truck
+com.example.ex0231.targil2.Vehicles <|-- com.example.ex0231.targil2.Heavy
+com.example.ex0231.targil2.Vehicles <|-- com.example.ex0231.targil2.Light
+com.example.ex0231.targil2.Heavy <|-- com.example.ex0231.targil2.Tractor
+com.example.ex0231.targil2.Light <|-- com.example.ex0231.targil2.Cart
+com.example.ex0231.targil2.Regular <|-- com.example.ex0231.targil2.Chery
+com.example.ex0231.targil2.Truck <|-- com.example.ex0231.targil2.Mercedes
+com.example.ex0231.targil2.Vehicles <|-- com.example.ex0231.targil2.Regular
+@enduml
